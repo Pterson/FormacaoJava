@@ -1,0 +1,56 @@
+
+# Compiled class files
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs
+hs_err_pid*
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+tmp/
+
+# IntelliJ
+*.iml
+.idea/
+out/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Arquivos temporários
+*.swp
+*.bak
+*.tmp
+
+# Arquivos ZIPs ou similares
+*.zip
+*.tar.gz
+*.rar
+
+# Ignora diretórios antigos ou fora do padrão
+old_screenmatch/
+SCREENMATCH/
