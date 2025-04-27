@@ -16,6 +16,11 @@ public class Filme extends Titulo implements Classificacao {
     public int getClassificacao() {
         return (int) obterMedia() / 2;
     }
+
+    @Override
+    public String toString() {
+        return "\nFilme: " + this.getNome() + " (" + this.getAnoDeLancamento()  + ")";
+    }
 }
 
 

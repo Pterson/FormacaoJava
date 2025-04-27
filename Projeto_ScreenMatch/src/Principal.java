@@ -4,6 +4,8 @@ import br.com.pet.screenMatch.models.Serie;
 import br.com.pet.screenMatch.services.CalculadoraDeTempo;
 import br.com.pet.screenMatch.services.Recomendacao;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -107,7 +109,19 @@ public class Principal {
         episodio.setTotalVisualizacao(300);
         recomendacao.filtrar(episodio);
 
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(movie);
+        listaDeFilmes.add(movie2);
+        listaDeFilmes.add(movie3);
 
+        System.out.println("\n------------------ Lista de Filmes ------------------");
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+
+        for (int i = 0; i < listaDeFilmes.size(); i++) {
+            System.out.println((i + 1) + "º da lista: " + listaDeFilmes.get(i).getNome());
+        }
+
+        System.out.println(listaDeFilmes);
 
     }
 }
