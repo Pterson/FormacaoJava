@@ -1,23 +1,15 @@
-
-# Compiled class files
+# ===== Arquivos compilados =====
 *.class
 
-# Log file
+# ===== Arquivos de log =====
 *.log
 
-# BlueJ files
-*.ctxt
+# ===== IDEs =====
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs
-hs_err_pid*
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
 
 # Eclipse
 .project
@@ -26,13 +18,10 @@ hs_err_pid*
 bin/
 tmp/
 
-# IntelliJ
-*.iml
-.idea/
-out/
-
-# VS Code
+# Visual Studio Code
 .vscode/
+
+# ===== Sistemas Operacionais =====
 
 # Mac
 .DS_Store
@@ -41,16 +30,32 @@ out/
 Thumbs.db
 ehthumbs.db
 
-# Arquivos temporários
+# ===== Pacotes e Arquivos de Build =====
+*.jar
+*.war
+*.ear
+
+# ===== Arquivos Temporários =====
 *.swp
 *.bak
 *.tmp
 
-# Arquivos ZIPs ou similares
+# ===== Outros =====
+
+# BlueJ
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Arquivos compactados
 *.zip
 *.tar.gz
 *.rar
 
-# Ignora diretórios antigos ou fora do padrão
+# Logs de erro da JVM
+hs_err_pid*
+
+# Diretórios ou projetos antigos
 old_screenmatch/
 SCREENMATCH/

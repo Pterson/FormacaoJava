@@ -1,3 +1,5 @@
+package br.com.pet.screenMatch.principal;
+
 import br.com.pet.screenMatch.models.Episodio;
 import br.com.pet.screenMatch.models.Filme;
 import br.com.pet.screenMatch.models.Serie;
@@ -10,9 +12,9 @@ public class Principal {
     public static void main(String[] args) {
 
         System.out.println("\n------------------ Filmes ------------------");
-        Filme movie = new Filme();
-        movie.setNome("O Poderoso Chefão");
-        movie.setAnoDeLancamento(1970);
+        Filme movie = new Filme("O Poderoso Chefão", 1970);
+        //movie.setNome("O Poderoso Chefão");
+        //movie.setAnoDeLancamento(1970);
         movie.setDuracaoEmMinutos(180);
         movie.setDiretor("Francis Ford Coppola");
 
@@ -26,9 +28,9 @@ public class Principal {
         System.out.println("Total de avaliações: "  + movie.getTotalDeAvaliacoes());
 
 
-        Filme movie2 = new Filme();
-        movie2.setNome("Velozes e Furiosos");
-        movie2.setAnoDeLancamento(2015);
+        Filme movie2 = new Filme("Velozes e Furiosos", 2015);
+        //movie2.setNome("Velozes e Furiosos");
+        //movie2.setAnoDeLancamento(2015);
         movie2.setDuracaoEmMinutos(130);
         movie2.setIncluidoNoPlano(true);
 
@@ -42,9 +44,9 @@ public class Principal {
         System.out.println("Total de avaliações: "  + movie2.getTotalDeAvaliacoes());
 
 
-        Filme movie3 = new Filme();
-        movie3.setNome("The Matrix");
-        movie3.setAnoDeLancamento(1999);
+        Filme movie3 = new Filme("The Matrix", 1999);
+        //movie3.setNome("The Matrix");
+        //movie3.setAnoDeLancamento(1999);
         movie3.setDuracaoEmMinutos(135);
         movie3.setIncluidoNoPlano(true);
 
@@ -64,9 +66,9 @@ public class Principal {
 
         System.out.println("\n------------------ Série ------------------");
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
+        //lost.setNome("Lost");
+        //lost.setAnoDeLancamento(2000);
         lost.setIncluidoNoPlano(true);
         lost.setAtiva(true);
         lost.setTemporadas(10);
@@ -75,9 +77,9 @@ public class Principal {
         lost.exibirFichaTecnica();
         System.out.println("Duração total em minutos: " + lost.getDuracaoEmMinutos());
 
-        Serie laCasaDePapel = new Serie();
-        laCasaDePapel.setNome("La Casa de Papel");
-        laCasaDePapel.setAnoDeLancamento(2017);
+        Serie laCasaDePapel = new Serie("La Casa de Papel",2017);
+        //laCasaDePapel.setNome("La Casa de Papel");
+        //laCasaDePapel.setAnoDeLancamento(2017);
         laCasaDePapel.setIncluidoNoPlano(true);
         laCasaDePapel.setAtiva(true);
         laCasaDePapel.setTemporadas(5);

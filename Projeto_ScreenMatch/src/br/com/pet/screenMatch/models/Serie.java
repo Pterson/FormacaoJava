@@ -6,6 +6,10 @@ public class Serie extends Titulo {
     private int minutosPorEpisodio;
     private boolean ativa;
 
+    public Serie(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
+
     public int getTemporadas() {
         return temporadas;
     }
@@ -49,4 +53,6 @@ public class Serie extends Titulo {
         System.out.println("Está ativa: " + (isAtiva() ? "Sim" : "Não"));
         System.out.println("Duração: " + getDuracaoEmMinutos() + " minutos");
     }
+
+
 }

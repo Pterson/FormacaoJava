@@ -5,6 +5,11 @@ import br.com.pet.screenMatch.services.Classificacao;
 public class Filme extends Titulo implements Classificacao {
     private String diretor;
 
+    public Filme(String nome, int anoDeLancamento){
+        super(nome, anoDeLancamento);
+    }
+
+
     public String getDiretor() {
         return this.diretor;
     }
@@ -19,8 +24,9 @@ public class Filme extends Titulo implements Classificacao {
 
     @Override
     public String toString() {
-        return "\nFilme: " + this.getNome() + " (" + this.getAnoDeLancamento()  + ")";
+        return "\nFilme: " + this.getNome()
+            + " (" + this.getAnoDeLancamento()  + ")"
+            + " | Classificação: " + getClassificacao();
+
     }
 }
-
-

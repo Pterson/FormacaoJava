@@ -1,7 +1,6 @@
 package br.com.pet.listaDePessoas.principal;
 
 import br.com.pet.listaDePessoas.models.Pessoa;
-
 import java.util.ArrayList;
 
 public class Principal {
@@ -37,8 +36,5 @@ public class Principal {
         for (Pessoa pessoa : listaDePessoas) {
             System.out.println(pessoa);
         }
-
     }
-
-
 }

@@ -1,0 +1,59 @@
+# EditorConfig file to define coding styles for Java projects
+
+# Top-most EditorConfig file
+root = true
+
+# Apply to all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 1. Java Specific Code Style
+[*.java]
+indent_style = space
+indent_size = 4
+tab_width = 4
+max_line_length = 120
+
+# Organize imports
+ij_java_imports_layout = *
+ij_java_class_count_to_use_import_on_demand = 99
+ij_java_names_count_to_use_import_on_demand = 99
+ij_java_wrap_imports = true
+
+# 2. IntelliJ Specific (for Java)
+[*.{java}]
+ij_java_class_count_to_use_import_on_demand = 99
+ij_java_names_count_to_use_import_on_demand = 99
+ij_java_wrap_imports = true
+ij_java_insert_blank_lines_around_field = true
+
+# 3. IntelliJ .editorconfig settings for code formatting
+[*.java]
+# Set the ordering of imports: alphabetically, no wildcard imports
+ij_java_imports_layout = *  
+ij_java_wrap_imports = true
+
+# Set indentation
+indent_style = space
+indent_size = 4
+tab_width = 4
+
+# Max line length (helpful to avoid wide code)
+max_line_length = 120
+
+# 4. Remove trailing whitespace and add new line at the end of file
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# 5. Formatting for various other files
+
+# 6. Configs for other IDEs (IDEA-based, IntelliJ, etc.)
+[*.{properties,xml,gradle}]
+indent_size = 2
+
+# For Python files (optional)
+[*.py]
+indent_size = 4
