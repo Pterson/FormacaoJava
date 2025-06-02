@@ -4,8 +4,6 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
 
-        F
-
 
         ContaCorrente conta = new ContaCorrente();
         conta.setNumeroConta(123456);
@@ -35,6 +33,7 @@ public class Principal {
 
             System.out.println("\nDigite sua opção: ");
 
+            Scanner dados = null;
             if (!dados.hasNextInt()) { // Valida entrada não numérica
                 System.out.println("\nEntrada inválida! As opções disponiveis estão entre 1 e 4.");
                 dados.next(); // Limpa entrada inválida
